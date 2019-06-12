@@ -1,0 +1,30 @@
+﻿<Window x:Name="Stok_Games_" x:Class="StokGames.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StokGames"
+        mc:Ignorable="d"
+        Title="Stok Games - Principal" Height="678" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="122*"/>
+            <RowDefinition Height="525*"/>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="#DCDCDC" BorderThickness="1" HorizontalAlignment="Left" Height="647" VerticalAlignment="Top" Width="69" Background="#191970" Grid.RowSpan="2">
+            <Border BorderBrush="Black" BorderThickness="1"/>
+        </Border>
+        <Border BorderBrush="#DCDCDC" BorderThickness="1" HorizontalAlignment="Left" Height="647" Margin="723,0,0,0" VerticalAlignment="Top" Width="69" Background="#191970" Grid.RowSpan="2"/>
+
+        <Border BorderBrush="#191970" BorderThickness="1
+                " HorizontalAlignment="Left" Height="226" Margin="352,68.103,0,0" VerticalAlignment="Top" Width="245" Grid.Row="1">
+            <TextBox x:Name="txbUsuario" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap"  VerticalAlignment="Top" Width="120" Margin="63,69,0,0" Text="gerente"/>
+        </Border>
+        <PasswordBox x:Name="pwbSenha" HorizontalAlignment="Left" Margin="416,166.103,0,0" VerticalAlignment="Top" Width="120"  Height="23" Password="123" Grid.Row="1"/>
+
+        <Button x:Name="btnLogar" Content="Entrar" HorizontalAlignment="Left" Margin="435,207,0,0" VerticalAlignment="Top" Width="74"  RenderTransformOrigin="0.203,0.25" Background="#FFEEEEEE" Height="23" Grid.Row="1" Click="BtnLogar_Click"/>
+        <Image Margin="166,102,490,271" Grid.Row="1" Source="/StokGames;component/stok_games_logo.png" Stretch="Fill"/>
+
+
+    </Grid>
+</Window>

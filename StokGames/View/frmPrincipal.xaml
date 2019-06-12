@@ -1,0 +1,52 @@
+﻿<Window x:Name="frmPrincipalAdministracao" x:Class="StokGames.View.frmPrincipal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StokGames.View"
+        mc:Ignorable="d"
+        Title="Stok Games - Administração" Height="678" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="792" Background="#ececec" Margin="0,-2,0,0">
+            <MenuItem x:Name="mniMenu" Header="Menu&#xD;&#xA;" Height="30" Width="115" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Padding="30,5,10,0" FontSize="15" FontStretch="Expanded" >
+                <MenuItem x:Name="mniCadastro" Header="Cadastro" Height="30" Margin="0,0,-2,0" HorizontalAlignment="Left" Width="160">
+                    <MenuItem x:Name="mniFuncionario" Header="Funcionário" HorizontalAlignment="Left" Height="30" Width="172" Margin="0,0,-20,0" Click="MniFuncionario_Click" />
+                    <MenuItem x:Name="mniCliente" Header="Cliente" HorizontalAlignment="Left" Height="30" Width="172" Click="MniCliente_Click"/>
+                    <MenuItem x:Name="mniProduto" Header="Produto&#xD;&#xA;" HorizontalAlignment="Left" Height="30" Width="172" Margin="0,5,0,0" Click="MniProduto_Click"/>
+                    <MenuItem x:Name="mniFornecedor" Header="Fornecedor" HorizontalAlignment="Left" Height="30" Width="172" Margin="0,0,-19,0" Click="MniFornecedor_Click"/>
+                </MenuItem>
+                <MenuItem x:Name="mniSair" Header="Sair" HorizontalAlignment="Left" Height="30" Width="158" Click="MniSair_Click"/>
+            </MenuItem>
+        </Menu>
+        <Border BorderBrush="#DCDCDC" BorderThickness="1" HorizontalAlignment="Left" Height="298" Margin="159,248,0,0" VerticalAlignment="Top" Width="473">
+            <Label x:Name="lblMensagemEntrada" Content="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;Bem vindo, Stok Games - Administração " Margin="-1,1,1,-1"/>
+
+        </Border>
+        <Border BorderBrush="#DCDCDC" BorderThickness="1" HorizontalAlignment="Left" Height="380" VerticalAlignment="Top" Width="118" Background="#191970" Margin="0,216,0,0"/>
+        <Border BorderBrush="#DCDCDC" BorderThickness="1" HorizontalAlignment="Left" Height="380" VerticalAlignment="Top" Width="118" Background="#191970" Margin="674,216,0,0"/>
+        <Border BorderBrush="#DCDCDC" BorderThickness="1" HorizontalAlignment="Left" Height="10" VerticalAlignment="Top" Width="792" Background="#191970" Margin="0,179,0,0"/>
+        <Border BorderBrush="#DCDCDC" BorderThickness="1" HorizontalAlignment="Left" Height="10" VerticalAlignment="Top" Width="792" Background="#191970" Margin="0,627,0,0"/>
+        <Image x:Name="imgLogo" Margin="298,40,302,458" Source="/StokGames;component/stok_games_logo.png" Stretch="Fill"/>
+        <Border BorderBrush="#DCDCDC" BorderThickness="1" HorizontalAlignment="Left" Height="9" VerticalAlignment="Top" Width="265" Background="#191970" Margin="3,109,0,0" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <Border BorderBrush="#DCDCDC" BorderThickness="1" HorizontalAlignment="Left" Height="8" VerticalAlignment="Top" Width="270" Background="#191970" Margin="519,110,0,0" RenderTransformOrigin="0.5,0.5">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+
+    </Grid>
+</Window>
